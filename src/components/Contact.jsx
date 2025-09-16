@@ -5,18 +5,18 @@ import {
   Send,
   Github,
   Linkedin,
-  Twitter,
   Terminal,
+  BookOpen,
 } from "lucide-react";
 
 const Contact = () => {
   const [terminalOutput, setTerminalOutput] = useState([
     "$ whoami",
-    "alex.chen@ml-engineer.dev",
+    "Joy Shib",
     "$ pwd",
-    "/home/alex/projects/portfolio",
+    "/home/joy/projects/portfolio",
     "$ status",
-    "Available for new opportunities",
+    "Open to collaborate & learn",
     "$ _",
   ]);
   const [currentCommand, setCurrentCommand] = useState("");
@@ -24,16 +24,18 @@ const Contact = () => {
   const handleCommand = (cmd) => {
     const commands = {
       help: ["Available commands: whoami, skills, contact, clear, hire"],
-      whoami: ["Alex Chen - Senior ML Engineer"],
-      skills: ["PyTorch, TensorFlow, Computer Vision, NLP, MLOps"],
+      whoami: ["Joy Shib - Full Stack Developer & NLP Blogger"],
+      skills: ["React, Node.js, Python, NLP, Tailwind, Express"],
       contact: [
-        "Email: alex.chen@ml-engineer.dev",
-        "LinkedIn: /in/alex-chen-ml",
+        "Email: joyshib2001@gmail.com",
+        "LinkedIn: /in/joy-shib-a65847300/",
+        "GitHub: /ApurboShib",
+        "Medium: medium.com/@222115111",
       ],
       clear: [],
       hire: [
-        "Initiating collaboration protocol...",
-        "Let's build the future together! 🚀",
+        "Initializing collaboration sequence...",
+        "Let's build and learn together! 🚀",
       ],
     };
     const output = [...terminalOutput];
@@ -54,23 +56,28 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: Github, label: "GitHub", href: "#", color: "hover:text-gray-300" },
+    {
+      icon: Github,
+      label: "GitHub",
+      href: "https://github.com/ApurboShib",
+      color: "hover:text-gray-300",
+    },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/in/joy-shib-a65847300/",
       color: "hover:text-blue-400",
     },
     {
-      icon: Twitter,
-      label: "Twitter",
-      href: "#",
-      color: "hover:text-cyan-400",
+      icon: BookOpen,
+      label: "Medium",
+      href: "https://medium.com/@222115111",
+      color: "hover:text-purple-400",
     },
     {
       icon: Mail,
       label: "Email",
-      href: "mailto:alex.chen@ml-engineer.dev",
+      href: "mailto:joyshib2001@gmail.com",
       color: "hover:text-green-400",
     },
   ];
@@ -100,7 +107,7 @@ const Contact = () => {
               </div>
               <div className="flex-1 text-center">
                 <span className="text-green-400 font-mono text-sm">
-                  alex@ml-terminal
+                  joy@ml-terminal
                 </span>
               </div>
             </div>
@@ -224,7 +231,7 @@ const Contact = () => {
         </div>
         <div className="mt-16 pt-8 border-t border-gray-700/30 text-center text-gray-400">
           <p className="mb-2">
-            © 2024 Alex Chen. Built with React & Tailwind CSS.
+            © 2024 Joy Shib. Built with React & Tailwind CSS.
           </p>
           <p className="font-mono text-sm text-cyan-400">
             "The future belongs to those who understand and shape artificial
