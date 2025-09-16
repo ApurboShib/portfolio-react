@@ -106,7 +106,7 @@ const Skills = () => {
             I'm intentionally learning next.
           </p>
         </div>
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-10 sm:mb-12">
           {Object.entries(skillCategories).map(([key, category]) => {
             const Icon = category.icon;
             const colors = getColorClasses(category.color);
@@ -127,7 +127,7 @@ const Skills = () => {
             );
           })}
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {active.skills.map((skill, index) => {
             const colors = getColorClasses(active.color);
             return (

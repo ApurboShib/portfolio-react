@@ -66,7 +66,7 @@ const Projects = () => {
             <div
               className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
             />
-            <div className="relative p-10 space-y-8">
+            <div className="relative p-6 sm:p-8 lg:p-10 space-y-8">
               <div className="flex flex-wrap items-start justify-between gap-4">
                 <div>
                   <h3 className="text-3xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">

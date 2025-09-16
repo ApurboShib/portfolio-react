@@ -97,7 +97,7 @@ const Contact = () => {
             fellow innovators and explore new opportunities.
           </p>
         </div>
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-10 lg:gap-12">
           <div className="bg-gray-900/80 backdrop-blur-sm rounded-2xl border border-green-500/30 overflow-hidden">
             <div className="flex items-center px-4 py-3 bg-gray-800/50 border-b border-green-500/20">
               <div className="flex space-x-2">
@@ -112,7 +112,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="p-6">
-              <div className="bg-black rounded-lg p-4 mb-4 h-64 overflow-y-auto font-mono text-sm">
+              <div className="bg-black rounded-lg p-3 sm:p-4 mb-4 h-56 sm:h-64 overflow-y-auto font-mono text-xs sm:text-sm break-words">
                 {terminalOutput.map((line, index) => (
                   <div
                     key={index}
@@ -213,7 +213,7 @@ const Contact = () => {
           <h3 className="text-xl font-bold text-white mb-8">
             Connect on Social
           </h3>
-          <div className="flex justify-center space-x-8">
+          <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
             {socialLinks.map((link, index) => {
               const Icon = link.icon;
               return (
