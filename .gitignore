@@ -23,3 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Local scaffold / AI assistant metadata (removed from repo)
+.bolt/

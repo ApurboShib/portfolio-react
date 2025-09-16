@@ -1,5 +1,6 @@
 import React from "react";
 import { Terminal, Zap } from "lucide-react";
+import SocialLinks from "../SocialLinks.jsx";
 
 const HeroText = () => {
   return (
@@ -39,6 +40,7 @@ const HeroText = () => {
             Resume (Soon)
           </button>
         </div>
+        <SocialLinks className="pt-2" />
       </div>
       <div className="flex items-center space-x-6 text-sm text-gray-400">
         <div className="flex items-center space-x-2">
