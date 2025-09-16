@@ -10,8 +10,7 @@ const HeroText = () => {
           <span className="font-mono text-sm">joy_shib.init();</span>
         </div>
         <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
-          <span className="text-white">Joy</span>
-          <br />
+          <span className="text-white">Joy</span>{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-green-400">
             Shib
           </span>
